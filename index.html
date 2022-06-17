@@ -7,7 +7,6 @@
     <link href="style.css" rel="stylesheet">
     <script defer src="script.js"></script>
     <title>assistente de Anamnese ISDA</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
     <div class="container" id="textofinal">
@@ -15,17 +14,22 @@
              <div id="question">Questions aaa</div>
              <div id="answer-buttons" class="btn-grid">
                 <br>
-                 <input type="checkbox" id="check1" value="1">
-                 <label class=btn id="op1"> answer 1</label>
-                 <br>
-                 <input type="checkbox" id="check2" value="1">
-                 <button class=btn id="op2"> answer 2</button>
-                 <br>
-                 <input type="checkbox" id="check3" value="1">
-                 <button class=btn id="op3"> answer 3</button>
-                 <br>
-                 <input type="checkbox" id="check4" value="1">
-                 <button class=btn id="op4"> answer 4</button>
+                <div class="conjuntobtn">
+                    <input type="checkbox" id="check1">
+                    <button class=btn id="op1" onclick="checkar('check1')"> answer 1</button>
+                </div>
+                 <div class="conjuntobtn">
+                    <input type="checkbox" id="check2">
+                    <button class=btn id="op2" onclick="checkar('check2')"> answer 2</button>
+                 </div> 
+                 <div class="conjuntobtn">
+                    <input type="checkbox" id="check3">
+                    <button class=btn id="op3" onclick="checkar('check3')"> answer 3</button>
+                 </div> 
+                 <div class="conjuntobtn">
+                    <input type="checkbox" id="check4">
+                    <button class=btn id="op4" onclick="checkar('check4')"> answer 4</button>
+                 </div>
              </div>
         </div>
         </div>

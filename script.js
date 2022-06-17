@@ -16,18 +16,18 @@ const Questions = [{
     q: "Olho",
     a: [{ text: "edema palpebral"},
         { text: "dor ocular",},
-        { text: "lacrimejamento", isCorrect: false },
-        { text: "fotofobia", isCorrect: true }
+        { text: "lacrimejamento"},
+        { text: "fotofobia"}
     ]
 
 },
 {
     id: 2,
     q: "nariz",
-    a: [{ text: "obstrução", isCorrect: false },
-        { text: "rinorreia", isCorrect: false },
-        { text: "epistaxe", isCorrect: true },
-        { text: "prurido", isCorrect: false }
+    a: [{ text: "obstrução"},
+        { text: "rinorreia"},
+        { text: "epistaxe"},
+        { text: "prurido"}
     ]
 
 },
@@ -35,9 +35,9 @@ const Questions = [{
     id: 3,
     q: "ouvido",
     a: [{ text: "otalgia"},
-        { text: "otorreia", isCorrect: false },
-        { text: "otorragia", isCorrect: false },
-        { text: "prurido", isCorrect: true }
+        { text: "otorreia"},
+        { text: "otorragia"},
+        { text: "prurido"}
     ]
 
 },
@@ -45,9 +45,9 @@ const Questions = [{
     id: 4,
     q: "boca e garganta",
     a: [{ text: "odinofagia"},
-        { text: "rouquidão", isCorrect: false },
-        { text: "dislalia", isCorrect: false },
-        { text: "edema", isCorrect: true }
+        { text: "rouquidão"},
+        { text: "dislalia" },
+        { text: "edema" }
     ]
 
 },
@@ -55,9 +55,9 @@ const Questions = [{
     id: 5,
     q: " aparelho cardiorrespiratorio",
     a: [{ text: "palpitaçao"},
-        { text: "sincope", isCorrect: false },
-        { text: "dispneia", isCorrect: false },
-        { text: "dor torácica", isCorrect: true }
+        { text: "sincope" },
+        { text: "dispneia"},
+        { text: "dor torácica"}
     ]
 
 },
@@ -65,9 +65,9 @@ const Questions = [{
     id: 6,
     q: " aparelho digestivo",
     a: [{ text: "disfagia"},
-        { text: "nausea/vomitos", isCorrect: false },
-        { text: "diarréia", isCorrect: false },
-        { text: "eructação", isCorrect: true }
+        { text: "nausea/vomitos"},
+        { text: "diarréia"},
+        { text: "eructação"}
     ]
 
 },
@@ -75,9 +75,9 @@ const Questions = [{
     id: 7,
     q: " aparelho genito urinario",
     a: [{ text: "disuriaa"},
-        { text: "polaciuria", isCorrect: false },
-        { text: "nicturia", isCorrect: false },
-        { text: "incontinencia", isCorrect: true }
+        { text: "polaciuria"},
+        { text: "nicturia"},
+        { text: "incontinencia" }
     ]
 
 },
@@ -85,9 +85,9 @@ const Questions = [{
     id: 7,
     q: " linfo hematopoetico",
     a: [{ text: "sangramento"},
-        { text: "infecções frequentes", isCorrect: false },
-        { text: "mancha roxas", isCorrect: false },
-        { text: "alterações cutanea", isCorrect: true }
+        { text: "infecções frequentes"},
+        { text: "mancha roxas" },
+        { text: "alterações cutanea"}
     ]
 
 },
@@ -95,9 +95,9 @@ const Questions = [{
     id: 8,
     q: " aparelho locomotor",
     a: [{ text: "espasmos"},
-        { text: "claudicação intermitente", isCorrect: false },
-        { text: "fraqueza", isCorrect: false },
-        { text: "dores articulares", isCorrect: true }
+        { text: "claudicação intermitente"},
+        { text: "fraqueza"},
+        { text: "dores articulares"}
     ]
 
 }
@@ -161,7 +161,9 @@ nextpagebtn.addEventListener('click', function() {
 // reseta checkbox, troca as resposta
 
 
-//pra fazer. adicionar um if texto for "nulo" ativar a função hide no btn. 
 // atalho pra clickar nos botoes com 1 2 3 4. 
 // adicionar plugin live server.
 
+function checkar(id) { 
+    document.getElementById(id).checked = !document.getElementById(id).checked}
+    // pega o id e pega o estado de check e altera para o inverso com "!"
