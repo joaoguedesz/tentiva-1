@@ -15,7 +15,7 @@ const Questions = [{
     id: 1,
     q: "Olho",
     a: [{ text: "edema palpebral"},
-        { text: "dor ocular", isCorrect: false },
+        { text: "dor ocular",},
         { text: "lacrimejamento", isCorrect: false },
         { text: "fotofobia", isCorrect: true }
     ]
@@ -140,10 +140,10 @@ var checkbox4 = document.getElementById('check4')
 // transformando os botoes em variaveis em js
 
 function getresults(){
-    if (checkbox1.checked = true) respostas.push(op1.innerText);
-    if (checkbox2.checked = true) respostas.push(op2.innerText);
-    if (checkbox3.checked = true) respostas.push(op3.innerText);
-    if (checkbox4.checked = true) respostas.push(op4.innerText)
+    if (checkbox1.checked == true) respostas.push(op1.innerText);
+    if (checkbox2.checked == true) respostas.push(op2.innerText);
+    if (checkbox3.checked == true) respostas.push(op3.innerText);
+    if (checkbox4.checked == true) respostas.push(op4.innerText)
 }
 
 nextpagebtn.addEventListener('click', function() {
@@ -156,7 +156,7 @@ nextpagebtn.addEventListener('click', function() {
     checkbox3.checked = false;
     checkbox4.checked = false;
     console.log(respostas);
-    navigator.clipboard.writeText(respostas);
+    navigator.clipboard.writeText(respostas)
 })
 // reseta checkbox, troca as resposta
 
