@@ -156,7 +156,7 @@ nextpagebtn.addEventListener('click', function() {
     checkbox3.checked = false;
     checkbox4.checked = false;
     console.log(respostas);
-    navigator.clipboard.writeText(respostas)
+    navigator.clipboard.writeText("ISDA: " + respostas)
 })
 // reseta checkbox, troca as resposta
 
@@ -167,3 +167,22 @@ nextpagebtn.addEventListener('click', function() {
 function checkar(id) { 
     document.getElementById(id).checked = !document.getElementById(id).checked}
     // pega o id e pega o estado de check e altera para o inverso com "!"
+
+document.addEventListener("keydown", function(event) {
+    console.log(event.key);
+    if (event.key == "Enter") [
+        getresults(),
+        nextpage(),
+        setquestions(page),
+        checkbox1.checked = false,
+        checkbox2.checked = false,
+        checkbox3.checked = false,
+        checkbox4.checked = false,
+        console.log(respostas),
+        navigator.clipboard.writeText("ISDA: " + respostas)]
+   if (event.key == "1") document.getElementById('check1').checked = !document.getElementById('check1').checked
+   if (event.key == "2") document.getElementById('check2').checked = !document.getElementById('check2').checked
+   if (event.key == "3") document.getElementById('check3').checked = !document.getElementById('check3').checked
+   if (event.key == "4") document.getElementById('check4').checked = !document.getElementById('check4').checked
+    })
+        // quando pressionadoa tecla certa roda as funçoes correspondentes de cada intenção
