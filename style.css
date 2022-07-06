@@ -28,7 +28,7 @@ body {
 
 .conjuntobtn {
     display: flex;
-    border: solid 1px black;
+    border: solid 1px aliceblue;
     align-items: center;
     margin-top: 20px;
 }

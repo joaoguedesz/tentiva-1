@@ -82,7 +82,7 @@ const Questions = [{
 
 },
 {
-    id: 7,
+    id: 8,
     q: " linfo hematopoetico",
     a: [{ text: "sangramento"},
         { text: "infecções frequentes"},
@@ -92,7 +92,7 @@ const Questions = [{
 
 },
 {
-    id: 8,
+    id: 9,
     q: " aparelho locomotor",
     a: [{ text: "espasmos"},
         { text: "claudicação intermitente"},
@@ -101,6 +101,7 @@ const Questions = [{
     ]
 
 }
+
 //lista das opções do que colocar
 ]
 
@@ -123,11 +124,11 @@ setquestions(page)
 //determina o começo = 0
 
 function nextpage() {
-    if (page < 9) [page = page + 1];
+    if (page < 10) [page = page + 1];
     console.log(page + ' esse é o numero da pagina');
-    if (page == 9) document.getElementById('question-container').style.display = "none";
-    if (page == 9) document.getElementById('nextbtn').style.display = "none";
-    if (page == 9) textofinal.innerText = 'Anamnese copiada apenas use CTRL+V no prontuario   =)'
+    if (page == 10) document.getElementById('question-container').style.display = "none";
+    if (page == 10) document.getElementById('nextbtn').style.display = "none";
+    if (page == 10) textofinal.innerText = 'Anamnese copiada apenas use CTRL+V no prontuario  '
 }
 // adiciona uma pagina e fala no console o valor limitando o valor maximo
 // tbm meche nos display. page == pagemaxima+1
@@ -143,7 +144,7 @@ function getresults(){
     if (checkbox1.checked == true) respostas.push(op1.innerText);
     if (checkbox2.checked == true) respostas.push(op2.innerText);
     if (checkbox3.checked == true) respostas.push(op3.innerText);
-    if (checkbox4.checked == true) respostas.push(op4.innerText)
+    if (checkbox4.checked == true) respostas.push(op4.innerText);
 }
 
 nextpagebtn.addEventListener('click', function() {
@@ -186,3 +187,4 @@ document.addEventListener("keydown", function(event) {
    if (event.key == "4") document.getElementById('check4').checked = !document.getElementById('check4').checked
     })
         // quando pressionadoa tecla certa roda as funçoes correspondentes de cada intenção
+

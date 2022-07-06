@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+    <script defer src="script.js"></script>
+    <title>assistente de Anamnese ISDA</title>
+</head>
+<body>
+    <div class="container" id="textofinal">
+        <div id="question-container">
+             <div id="question">Questions aaa</div>
+             <div id="answer-buttons" class="btn-grid">
+                <br>
+                <div class="conjuntobtn">
+                    <input type="checkbox" id="check1" onkeydown="atalhoteclas('enter')">
+                    <button class=btn id="op1" onclick="checkar('check1')"> answer 1</button>
+                </div>
+                 <div class="conjuntobtn">
+                    <input type="checkbox" id="check2">
+                    <button class=btn id="op2" onclick="checkar('check2')"> answer 2</button>
+                 </div> 
+                 <div class="conjuntobtn">
+                    <input type="checkbox" id="check3">
+                    <button class=btn id="op3" onclick="checkar('check3')"> answer 3</button>
+                 </div> 
+                 <div class="conjuntobtn">
+                    <input type="checkbox" id="check4">
+                    <button class=btn id="op4" onclick="checkar('check4')"> answer 4</button>
+                 </div>
+             </div>
+        </div>
+        </div>
+        <div class="controls">
+            <button id="nextbtn" class="next-btn btn">próximo</button>
+        </div>
+    </div>
+</body>
+</html>
