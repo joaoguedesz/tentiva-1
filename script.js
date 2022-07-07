@@ -188,3 +188,4 @@ document.addEventListener("keydown", function(event) {
     })
         // quando pressionadoa tecla certa roda as funçoes correspondentes de cada intenção
 
+// git push,  git commit -m "texto" git add -A
